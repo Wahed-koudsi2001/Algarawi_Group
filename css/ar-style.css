@@ -1,0 +1,81 @@
+:root {
+    --default-font: "Tajawal", serif;
+}
+
+.section-title h3 {
+    padding-right: 35px;
+}
+
+.section-title h3::before {
+    right: 0;
+    background: url("../images/icon-sub-heading-ar.svg");
+}
+.hero-content .btn-default.btn-highlighted {
+    margin-right: 30px;
+    margin-left: 0;
+}
+.feedback-counter {
+    flex-direction: row-reverse;
+}
+.about-us-images {
+    margin-left: 30px;
+    margin-right: 0;
+}
+.about-us-content-list ul li::before {
+    right: 0;
+}
+.about-us-content-list ul li {
+    padding-right: 30px;
+    padding-left: 0;
+}
+.about-contact-item .icon-box {
+    margin-right: 0;
+    margin-left: 15px;
+}
+.about-facility-item {
+    align-items: center;
+}
+.about-facility-item .icon-box {
+    margin-right: 0;
+    margin-left: 20px;
+}
+.why-choose-item .icon-box {
+    margin-left: 20px;
+    margin-right: 0;
+}
+.why-choose-images {
+    margin-right: 30px;
+    margin-left: 0;
+}
+.testimonial-body .author-image {
+    margin-right: 0;
+    margin-left: 15px;
+}
+.footer-social-links ul li:last-child {
+    margin-right: 10px;
+}
+.contact-us-form {
+    margin-left: 0;
+    margin-right: 30px;
+}
+.contact-info-item .icon-box {
+    margin-right: 0;
+    margin-left: 20px;
+}
+@media only screen and (max-width: 991px) {
+    .why-choose-images {
+        margin-right: 0;
+    }
+    .contact-us-form {
+        margin-right: 0;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .hero-content .btn-default {
+        margin-left: 40px;
+        margin-right: 0;
+    }
+    .hero-content .btn-default.btn-highlighted {
+        margin-right: 0;
+    }
+}
