@@ -51,8 +51,9 @@
     margin-right: 0;
     margin-left: 15px;
 }
-.footer-social-links ul li:last-child {
-    margin-right: 10px;
+.footer-social-links ul li {
+    margin-right: 0;
+    margin-left: 10px;
 }
 .contact-us-form {
     margin-left: 0;

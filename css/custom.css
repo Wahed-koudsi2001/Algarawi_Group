@@ -1908,10 +1908,6 @@ header.main-header .header-sticky.active .navbar {
 	margin-right: 10px;
 }
 
-.footer-social-links ul li:last-child {
-	margin-right: 0;
-}
-
 .footer-social-links ul li a {
 	display: flex;
 	justify-content: center;
@@ -4470,16 +4466,17 @@ header.main-header .header-sticky.active .navbar {
 	}
 
 	.footer-logo {
-		margin-bottom: 20px;
+		margin: 0 auto 20px;
 	}
 
 	.footer-social-links {
-		justify-content: start;
+		justify-content: center;
 		gap: 20px;
 	}
 
 	.footer-social-link-title h3 {
 		font-size: 18px;
+		display: none;
 	}
 
 	.footer-links h3 {
