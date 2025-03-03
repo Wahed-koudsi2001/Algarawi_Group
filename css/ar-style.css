@@ -63,6 +63,12 @@
     margin-right: 0;
     margin-left: 20px;
 }
+.section-title h2 {
+    letter-spacing: 0;
+}
+.faq-accordion .accordion-header .accordion-button {
+    text-align: right;
+}
 @media only screen and (max-width: 991px) {
     .why-choose-images {
         margin-right: 0;
