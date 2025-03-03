@@ -69,6 +69,15 @@
 .faq-accordion .accordion-header .accordion-button {
     text-align: right;
 }
+.vision-mission-item::before {
+    background-color: #e4a542;
+}
+@media (min-width: 767px) {
+    .vision-mission-item::before {
+        left: -75px;
+        right: initial;
+    }
+}
 @media only screen and (max-width: 991px) {
     .why-choose-images {
         margin-right: 0;
