@@ -10,10 +10,6 @@
     right: 0;
     background: url("../images/icon-sub-heading-ar.svg");
 }
-.hero-content .btn-default.btn-highlighted {
-    margin-right: 30px;
-    margin-left: 0;
-}
 .feedback-counter {
     flex-direction: row-reverse;
 }
@@ -71,6 +67,13 @@
 }
 .vision-mission-item::before {
     background-color: #e4a542;
+}
+.timeline__event__description {
+    text-align: right;
+}
+.btnone {
+    left: initial;
+    right: 15px;
 }
 @media (min-width: 767px) {
     .vision-mission-item::before {

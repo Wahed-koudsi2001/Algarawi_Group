@@ -771,16 +771,16 @@ header.main-header .header-sticky.active .navbar {
 	font-size: 22px;
 	color: var(--white-color);
 	width: 100%;
-	max-width: 600px;
+	max-width: 1000px;
 }
 
 .hero-content .section-title h3::before {
 	filter: brightness(0) invert(1);
 }
 
-.hero-content .btn-default.btn-highlighted {
+/* .hero-content .btn-default.btn-highlighted {
 	margin-left: 30px;
-}
+} */
 
 /************************************/
 /***       05. About Us css 	  ***/
@@ -4270,7 +4270,6 @@ header.main-header .header-sticky.active .navbar {
 	}
 
 	.hero-content .btn-default {
-		margin-right: 40px;
 		margin-bottom: 10px;
 	}
 
@@ -4666,7 +4665,7 @@ header.main-header .header-sticky.active .navbar {
 	overflow: hidden;
 	position: fixed;
 	bottom: 15px;
-	right: 15px;
+	left: 15px;
 	z-index: 9999999999;
 	animation: whatsapp 2s infinite ease-in-out;
 	-webkit-animation: whatsapp 2s infinite ease-in-out;
@@ -4952,6 +4951,7 @@ header.main-header .header-sticky.active .navbar {
 }
 .timeline__event__description {
 	flex-basis: 100%;
+	text-align: left;
 }
 .timeline__event--type2:after {
 	background: #555ac0;
