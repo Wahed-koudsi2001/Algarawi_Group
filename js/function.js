@@ -368,7 +368,7 @@
 
 window.addEventListener('scroll', function () {
 	const whatsappBtn = document.querySelector('.btn-whatsapp');
-	if (window.scrollY >= 50) {
+	if (window.scrollY >= 300) {
 		whatsappBtn.classList.add('active');
 	} else {
 		whatsappBtn.classList.remove('active');
