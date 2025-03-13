@@ -389,7 +389,7 @@ header.main-header {
 	position: fixed;
 	top: 0;
 	width: 100%;
-	z-index: 100;
+	z-index: 1;
 	background-color: #000;
 }
 
@@ -660,7 +660,7 @@ header.main-header .header-sticky.active .navbar {
 	width: 100vw;
 	height: 100vh;
 	position: relative;
-	z-index: 999999999999999999999999;
+	z-index: 2;
 }
 
 .hero-video video {
