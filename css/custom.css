@@ -659,9 +659,6 @@ header.main-header .header-sticky.active .navbar {
 .hero {
 	width: 100vw;
 	height: 100vh;
-	position: relative;
-	/* background-color: #000; */
-	/* z-index: 99999999999999999999; */
 }
 
 .hero-video video {
@@ -1505,7 +1502,7 @@ header.main-header .header-sticky.active .navbar {
 
 .how-work-company-slider {
 	border-top: 1px solid var(--dark-divider-color);
-	padding-top: 60px;
+	padding-top: 160px;
 }
 
 .how-work-company-slider .company-logo {
@@ -3735,10 +3732,6 @@ header.main-header .header-sticky.active .navbar {
 		margin-bottom: 20px;
 	}
 
-	.how-work-company-slider {
-		margin-top: 80px;
-	}
-
 	.our-skill {
 		padding: 50px 0;
 	}
@@ -4370,7 +4363,7 @@ header.main-header .header-sticky.active .navbar {
 	}
 
 	.how-work-company-slider {
-		margin-top: 100px;
+		margin-top: 40px;
 	}
 
 	.our-skill-image {
