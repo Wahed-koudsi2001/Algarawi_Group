@@ -3746,8 +3746,7 @@ header.main-header .header-sticky.active .navbar {
 	}
 
 	.how-work-company-slider {
-		margin-top: 40px;
-		padding-top: 40px;
+		margin-top: 80px;
 	}
 
 	.our-skill {
@@ -4381,8 +4380,7 @@ header.main-header .header-sticky.active .navbar {
 	}
 
 	.how-work-company-slider {
-		margin-top: 30px;
-		padding-top: 30px;
+		margin-top: 100px;
 	}
 
 	.our-skill-image {
@@ -4650,8 +4648,8 @@ header.main-header .header-sticky.active .navbar {
 	z-index: 9999999999;
 	animation: whatsapp 2s infinite ease-in-out;
 	-webkit-animation: whatsapp 2s infinite ease-in-out;
-	opacity: 0;
 	transition: opacity 0.3s;
+	display: none;
 }
 
 @keyframes whatsapp {
@@ -4682,7 +4680,7 @@ header.main-header .header-sticky.active .navbar {
 	}
 }
 .btn-whatsapp.active {
-	opacity: 1;
+	display: block;
 }
 .btnone:hover {
 	box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.45);
@@ -4741,34 +4739,11 @@ header.main-header .header-sticky.active .navbar {
 	font-weight: 700;
 }
 
-/* .scrolling-ticker-box {
-	--gap: 40px;
-	position: relative;
-	display: flex;
-	overflow: hidden;
-	user-select: none;
-	gap: var(--gap);
-	align-items: center;
-}
-
 .scrolling-content {
-	flex-shrink: 0;
-	display: flex;
-	gap: var(--gap);
-	min-width: 100%;
-	animation: scroll 60s linear infinite;
-	-webkit-animation: scroll 60s linear infinite;
-}
-.scrolling-content {
-	animation: scroll-rtl 40s linear infinite;
-	-webkit-animation: scroll-rtl 40s linear infinite;
-} */
-.scrolling-content {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 30px 0;
-	align-items: center;
-	justify-content: space-between;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	gap: 0 30px;
+	justify-content: center;
 }
 .scrolling-content img {
 	width: 200px;
@@ -4999,6 +4974,9 @@ header.main-header .header-sticky.active .navbar {
 	}
 	.scrolling-content {
 		justify-content: center;
+	}
+	.scrolling-content {
+		grid-template-columns: repeat(2, 1fr);
 	}
 }
 
