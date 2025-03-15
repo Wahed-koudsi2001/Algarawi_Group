@@ -3446,7 +3446,7 @@ header.main-header .header-sticky.active .navbar {
 	position: absolute;
 	top: 0;
 	left: 0;
-	background: var(--primary-color);
+	background: var(--accent-color);
 	border-radius: 50%;
 	width: 100%;
 	height: 100%;
@@ -3468,7 +3468,7 @@ header.main-header .header-sticky.active .navbar {
 }
 
 .contact-info-item:hover .icon-box i {
-	color: var(--white-color);
+	color: #fff;
 }
 
 .contact-info-content {
@@ -4469,10 +4469,6 @@ header.main-header .header-sticky.active .navbar {
 
 	.about-facility-item {
 		width: 100%;
-	}
-
-	.vision-mission {
-		background: linear-gradient(180deg, var(--primary-color) 40%, var(--white-color) 40%);
 	}
 
 	.vision-mission-box {
