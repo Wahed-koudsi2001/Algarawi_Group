@@ -366,14 +366,6 @@
 
 })(jQuery);
 
-window.addEventListener('scroll', function () {
-	const whatsappBtn = document.querySelector('.btn-whatsapp');
-	if (window.scrollY >= 300) {
-		whatsappBtn.classList.add('active');
-	} else {
-		whatsappBtn.classList.remove('active');
-	}
-});
 
 document.addEventListener('DOMContentLoaded', function () {
 	const navLinks = document.querySelectorAll('#menu .nav-link[href^="#"]');

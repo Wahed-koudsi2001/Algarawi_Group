@@ -120,7 +120,7 @@
                         <!-- About Image 1 Start -->
                         <div class="about-img-1">
                             <figure class="image-anime reveal">
-                                <img src="images/about-img-1.jpg" alt="img">
+                                <img src="images/about-img-2.jpg" alt="img">
                             </figure>
                         </div>
                         <!-- About Image 1 End -->
@@ -128,7 +128,7 @@
                         <!-- About Image 2 Start -->
                         <div class="about-img-2">
                             <figure class="image-anime reveal">
-                                <img src="images/about-img-2.jpg" alt="img">
+                                <img src="images/about-img-1.jpg" alt="img">
                             </figure>
 
                             <!-- Feedback Counter Start -->
@@ -262,21 +262,6 @@
                             </div>
                         </div>
                         <!-- About Facility Item End -->
-
-                        <!-- About Facility Item Start -->
-                        <div class="about-facility-item wow fadeInUp" data-wow-delay="0.4s">
-                            <div class="icon-box">
-                                <img src="images/delivery-truck.png" alt="img">
-                            </div>
-
-                            <div class="about-facility-content">
-                                <h3>توصيل سريع وآمن</h3>
-                                <p>
-                                    شحن موثوق ووصول في وقت قياسي
-                                </p>
-                            </div>
-                        </div>
-                        <!-- About Facility Item End -->
                     </div>
                     <!-- About Facility List End -->
                 </div>
@@ -294,7 +279,7 @@
                     <div class="section-title dark-section">
                         <h3 class="wow fadeInUp">الرؤية والرسالة</h3>
                         <h2 class="wow fadeInUp" data-cursor="-opaque">
-                            نظرة خلف الكواليس على وكالتنا
+                            تعرف على عالم الأناقة الذي نصنعه خصيصاً لك
                         </h2>
                     </div>
                     <!-- Section Title End -->
@@ -304,8 +289,7 @@
                     <!-- Section Title Content Start -->
                     <div class="section-title-content dark-section">
                         <p class="wow fadeInUp" data-wow-delay="0.2s">
-                            الملكي التاريخي للملك الراحل فيصل والذي منح المواطنين السعوديين فقط الحق في امتلاك الأعمال
-                            التجارية.
+                            انطلق معنا في رحلة إلى صميم إبداعنا حيث تُبتكر الأفكار وتتحول الرؤى إلى إنجازات استثنائية
                         </p>
                     </div>
                     <!-- Section Title Content End -->
@@ -950,7 +934,7 @@
                             <!-- Why Choose img 3 Start -->
                             <div class="why-choose-img-3">
                                 <figure class="image-anime reveal">
-                                    <img src="images/why-choose-img-3.jpg" alt="img">
+                                    <img src="images/why-choose-img-4.jpg" alt="img">
                                 </figure>
                             </div>
                             <!-- Why Choose img 3 End -->
@@ -958,7 +942,7 @@
                             <!-- Why Choose img 4 Start -->
                             <div class="why-choose-img-4">
                                 <figure class="image-anime reveal">
-                                    <img src="images/why-choose-img-4.jpg" alt="img">
+                                    <img src="images/why-choose-img-3.jpg" alt="img">
                                 </figure>
                             </div>
                             <!-- Why Choose img 4 End -->
@@ -1105,7 +1089,7 @@
                                 <img src="images/retail.png" alt="img">
                             </div>
                             <div class="how-we-work-content">
-                                <h3>01. التجزئة</h3>
+                                <h3>01. الأزياء</h3>
                                 <p>
                                     نقدم مجموعة متنوعة من الملابس الراقية والعصرية، بالإضافة إلى الملابس الكاجوال،
                                     الملابس الخارجية، والملابس الرياضية، التي
@@ -1922,10 +1906,10 @@
                             <div class="contact-info-content">
                                 <h3>رقم الهاتف</h3>
                                 <a href="tel:966114196096" dir="ltr"
-                                    style="text-align: right; display: block; color: #283132;">Tel.
+                                    style="text-align: right; display: block; color: #fff;">Tel.
                                     +966-114196096</a>
                                 <a href="tel:966114196101" dir="ltr"
-                                    style="text-align: right; display: block; color: #283132;">Fax.
+                                    style="text-align: right; display: block; color: #fff;">Fax.
                                     +966-114196101</a>
                             </div>
                             <!-- Contact Info Content End -->
@@ -2029,11 +2013,20 @@
     </footer>
     <!-- Footer End -->
 
-    <a class="btnone btn-icon btn-whatsapp" target="_blank"
-        href="https://api.whatsapp.com/send/?phone=966560733569&text&type=phone_number&app_absent=0">
-        <i class="fab fa-whatsapp"></i>
-        <span>واتس اب</span>
-    </a>
+
+    <button class="cs-scroll-top" role="button" aria-label="Scroll to top button">
+        <i class="cs-icon-chevron-up"></i>
+        <div class="cs-scroll-top-border">
+            <svg width="52" height="52" viewBox="0 0 52 52">
+                <path d="M26,2 a24,24 0 0,1 0,48 a24,24 0 0,1 0,-48" style="stroke-width: 2; fill: none;"></path>
+            </svg>
+        </div>
+        <div class="cs-scroll-top-progress">
+            <svg width="52" height="52" viewBox="0 0 52 52">
+                <path d="M26,2 a24,24 0 0,1 0,48 a24,24 0 0,1 0,-48" style="stroke-width: 2; fill: none;"></path>
+            </svg>
+        </div>
+    </button>
 
     <!-- Jquery Library File -->
     <script src="js/jquery-3.7.1.min.js"></script>
@@ -2068,6 +2061,54 @@
     <script src="js/wow.min.js"></script>
     <!-- Main Custom js file -->
     <script src="js/function.js"></script>
+    <script>
+
+        (() => {
+
+            /* Scroll to top */
+
+            (function () {
+                var section = 'cs-scroll-top';
+                var activeClass = 'is-active';
+                var offset = 200;
+                var scrollToTop = function scrollToTop() {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                };
+                var scrollToTopButton = document.querySelector(".".concat(section));
+                var progressPath = scrollToTopButton.querySelector(".".concat(section, "-progress path"));
+                var pathLength = progressPath.getTotalLength();
+                progressPath.style.transition = progressPath.style.WebkitTransition = 'none';
+                progressPath.style.strokeDasharray = "".concat(pathLength, " ").concat(pathLength);
+                progressPath.style.strokeDashoffset = pathLength;
+                progressPath.getBoundingClientRect();
+                progressPath.style.transition = progressPath.style.WebkitTransition = 'stroke-dashoffset 10ms linear';
+                var updateProgress = function updateProgress() {
+                    var scroll = window.scrollY || window.scrollTop || document.documentElement.scrollTop;
+                    var docHeight = Math.max(document.body.scrollHeight, document.documentElement.scrollHeight, document.body.offsetHeight, document.documentElement.offsetHeight, document.body.clientHeight, document.documentElement.clientHeight);
+                    var windowHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+                    var height = docHeight - windowHeight;
+                    var progress = pathLength - scroll * pathLength / height;
+                    progressPath.style.strokeDashoffset = progress;
+                };
+                updateProgress();
+                if (scrollToTopButton) {
+                    scrollToTopButton.addEventListener('click', scrollToTop);
+                }
+                window.addEventListener('scroll', function () {
+                    updateProgress();
+                    var scrollPos = window.scrollY || window.scrollTop || document.getElementsByTagName('html')[0].scrollTop;
+                    if (scrollPos > offset) {
+                        scrollToTopButton.classList.add(activeClass);
+                    } else {
+                        scrollToTopButton.classList.remove(activeClass);
+                    }
+                });
+            })();
+        })();
+    </script>
 </body>
 
 </html>
