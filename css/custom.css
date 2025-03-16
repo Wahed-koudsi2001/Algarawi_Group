@@ -2165,11 +2165,11 @@ header.main-header .header-sticky.active .navbar {
 }
 
 .vision-mission-box {
-	background-color: #000;
 	padding: 45px 60px;
 	display: flex;
 	flex-wrap: wrap;
 	gap: 30px 150px;
+	box-shadow: var(--accent-color) 0px 7px 29px 0px inset;
 }
 
 .vision-mission-item {
