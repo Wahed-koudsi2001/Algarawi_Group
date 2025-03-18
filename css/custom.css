@@ -19,7 +19,10 @@ body {
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 1.6em;
-	background: linear-gradient(45deg, #0a0a0a 10%, #1d1d1d 50%, #181818 90%);
+	background: url(../images/section-bg-shape.png) #0d0d0d;
+	background-repeat: repeat-y;
+	background-position: top  center;
+	background-size: 100% auto;
 	color: var(--text-color);
 }
 
@@ -997,7 +1000,6 @@ header.main-header .header-sticky.active .navbar {
 
 .why-choose-us {
 	padding: 100px 0;
-	background-color: #000;
 }
 
 .why-choose-item {
@@ -1470,7 +1472,6 @@ header.main-header .header-sticky.active .navbar {
 /************************************/
 
 .how-we-work {
-	background: #000;
 	padding: 100px 0;
 }
 
@@ -1846,7 +1847,6 @@ header.main-header .header-sticky.active .navbar {
 
 .main-footer {
 	padding: 80px 0 0;
-	background: #000;
 }
 
 .main-footer .footer-header {
@@ -2161,7 +2161,6 @@ header.main-header .header-sticky.active .navbar {
 
 .vision-mission {
 	padding: 100px 0 50px;
-	background: #000;
 }
 
 .vision-mission-box {
