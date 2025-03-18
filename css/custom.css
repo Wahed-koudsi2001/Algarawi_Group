@@ -21,7 +21,7 @@ body {
 	line-height: 1.6em;
 	background: url(../images/section-bg-shape.png) #0d0d0d;
 	background-repeat: repeat-y;
-	background-position: top  center;
+	background-position: top center;
 	background-size: 100% auto;
 	color: var(--text-color);
 }
@@ -165,7 +165,7 @@ body {
 
 .btn-default:hover {
 	background: transparent;
-	color: var(--white-color);
+	color: #000;
 }
 
 .btn-default::before {
@@ -181,6 +181,7 @@ body {
 	background-size: cover;
 	transform: translate(-20px, -50%);
 	transition: all 0.4s ease-in-out;
+	stroke: #000;
 }
 
 .btn-default:hover::before {
