@@ -19,7 +19,7 @@ body {
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 1.6em;
-	background: url(../images/section-bg-shape.png) #0d0d0d;
+	background: url(../images/freepik__enhance__19997.png) #0d0d0d;
 	background-repeat: repeat-y;
 	background-position: top center;
 	background-size: 100% auto;
@@ -1507,8 +1507,7 @@ header.main-header .header-sticky.active .navbar {
 }
 
 .how-work-company-slider {
-	border-top: 1px solid var(--dark-divider-color);
-	padding-top: 13%;
+	padding-top: 10%;
 }
 
 .how-work-company-slider .company-logo {
