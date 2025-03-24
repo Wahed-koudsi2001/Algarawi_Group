@@ -4731,13 +4731,14 @@ header.main-header .header-sticky.active .navbar {
 
 .scrolling-content {
 	display: grid;
+	align-items: center;
 	grid-template-columns: repeat(5, 1fr);
 	gap: 0 30px;
-	justify-content: center;
+	text-align: center;
 }
 .scrolling-content img {
 	width: 200px;
-	/* object-fit: cover; */
+	margin: auto;
 }
 @keyframes scroll-rtl {
 	from {
