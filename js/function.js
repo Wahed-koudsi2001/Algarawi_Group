@@ -1,4 +1,7 @@
 (function ($) {
+	document.getElementById('overlay-pop').addEventListener('click', function (e) {
+		this.style.display = 'none';
+	});
 	"use strict";
 
 	var $window = $(window);

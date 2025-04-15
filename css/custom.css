@@ -5306,3 +5306,60 @@ header.main-header .header-sticky.active .navbar {
 		content: "+";
 	}
 }
+
+.overlay-pop {
+	position: relative;
+}
+
+.overlay-pop::before {
+	content: "";
+	position: fixed;
+	width: 100vw;
+	height: 100%;
+	background: linear-gradient(45deg, #e4a64280 10%, #00000083 50%, #e4a64280 90%);
+	z-index: 999999;
+	inset: 0;
+}
+
+.pop-up {
+	width: 35%;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	z-index: 9999999999;
+	background: #fff;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	padding: 50px 0 0 0;
+	height: 300px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.pop-up .msg {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: column;
+}
+.pop-up h2 {
+	color: var(--accent-color);
+}
+.pop-up img {
+	width: 150px;
+}
+@media (max-width: 768px) {
+	.pop-up {
+		width: 93%;
+	}
+}
