@@ -35,7 +35,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $mail->Port = 465;
 
         $mail->setFrom('contact@webooo.tech', $data['name']);
-        $mail->addAddress('mohammedkoudsi48@gmail.com');
+        $mail->addAddress('INFO@ALGARAWIGROUP.SA');
         $mail->Subject = "رسالة جديدة من {$data['name']}";
         $mail->Body = "
         <p>Name: {$data['name']}</p>

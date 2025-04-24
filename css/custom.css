@@ -662,7 +662,6 @@ header.main-header .header-sticky.active .navbar {
 
 .hero {
 	width: 100vw;
-	height: 100vh;
 	position: relative;
 	z-index: 2;
 }
@@ -766,7 +765,7 @@ header.main-header .header-sticky.active .navbar {
 
 .about-us {
 	background: url("../images/section-bg-shape-1.svg") no-repeat center center/cover;
-	padding: 100px 0;
+	padding: 60px 0;
 }
 
 .about-us-images {
@@ -866,6 +865,7 @@ header.main-header .header-sticky.active .navbar {
 
 .feedback-counter:hover p {
 	background-color: var(--primary-color);
+	color: #000;
 }
 
 .feedback-counter h3 {
@@ -1505,19 +1505,112 @@ header.main-header .header-sticky.active .navbar {
 	color: var(--white-color);
 	margin: 0;
 }
-
 .how-work-company-slider {
-	padding-top: 10%;
+	overflow: hidden;
+	margin: 2rem 0;
 }
 
-.how-work-company-slider .company-logo {
-	text-align: center;
+.logos-container {
+	overflow: hidden;
+	position: relative;
 }
 
-.how-work-company-slider .company-logo img {
-	width: 100%;
+.logos-container-wrapper {
+	display: flex;
+	width: max-content;
 }
 
+/* RTL Carousel Styles */
+.how-work-company-slider:not([dir]) .logos-container-wrapper {
+	animation: scroll-rtl 60s linear infinite;
+	-webkit-animation: scroll-rtl 60s linear infinite;
+}
+
+/* LTR Carousel Styles */
+.how-work-company-slider[dir="ltr"] .logos-container-wrapper {
+	animation: scroll-ltr 60s linear infinite;
+	-webkit-animation: scroll-ltr 60s linear infinite;
+}
+
+/* Animation Keyframes */
+@keyframes scroll-rtl {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(50%);
+	}
+}
+
+@keyframes scroll-ltr {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(-50%);
+	}
+}
+
+/* Shared Styles */
+.slide {
+	flex: 0 0 auto;
+	padding: 0 15px;
+}
+
+.company-logo img {
+	max-width: 150px;
+	height: auto;
+	filter: grayscale(100%);
+	transition: filter 0.3s ease;
+}
+
+.company-logo img:hover {
+	filter: grayscale(0);
+}
+
+.logos-container:hover .logos-container-wrapper {
+	animation-play-state: paused;
+}
+
+/* Direction Settings */
+.how-work-company-slider:not([dir]) {
+	/* RTL Carousel */
+	direction: rtl;
+}
+
+.how-work-company-slider[dir="ltr"] {
+	/* LTR Carousel */
+	direction: ltr;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+	.company-logo img {
+		max-width: 100px;
+	}
+	.slide {
+		padding: 0 10px;
+	}
+}
+@keyframes scroll-rtl {
+	/* Right-to-left animation */
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(50%);
+	}
+}
+
+@keyframes scroll-ltr {
+	/* Left-to-right animation */
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(-50%);
+	}
+}
 /************************************/
 /***      11. Our Skills css      ***/
 /************************************/
@@ -4738,23 +4831,6 @@ header.main-header .header-sticky.active .navbar {
 .scrolling-content img {
 	width: 200px;
 	margin: auto;
-}
-@keyframes scroll-rtl {
-	from {
-		transform: translateX(calc(100% - var(--gap)));
-		-webkit-transform: translateX(calc(100% - var(--gap)));
-		-moz-transform: translateX(calc(100% - var(--gap)));
-		-ms-transform: translateX(calc(100% - var(--gap)));
-		-o-transform: translateX(calc(100% - var(--gap)));
-	}
-
-	to {
-		transform: translateX(0);
-		-webkit-transform: translateX(0);
-		-moz-transform: translateX(0);
-		-ms-transform: translateX(0);
-		-o-transform: translateX(0);
-	}
 }
 
 .timeline {
