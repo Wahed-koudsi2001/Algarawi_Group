@@ -4822,15 +4822,19 @@ header.main-header .header-sticky.active .navbar {
 }
 
 .scrolling-content {
-	display: grid;
-	align-items: center;
-	grid-template-columns: repeat(5, 1fr);
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
 	gap: 0 30px;
 	text-align: center;
 }
+.scrolling-content > div {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
 .scrolling-content img {
-	width: 200px;
-	margin: auto;
+	width: 220px;
 }
 
 .timeline {
@@ -5436,5 +5440,8 @@ header.main-header .header-sticky.active .navbar {
 @media (max-width: 768px) {
 	.pop-up {
 		width: 93%;
+	}
+	.scrolling-content img {
+		width: 120px;
 	}
 }

@@ -75,6 +75,10 @@
     left: initial;
     right: 15px;
 }
+.section-title-content {
+    margin-left: 0;
+    margin-right: 120px;
+}
 @media (min-width: 767px) {
     .vision-mission-item::before {
         left: -75px;
