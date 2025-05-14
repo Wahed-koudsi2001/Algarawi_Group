@@ -2356,7 +2356,7 @@ header.main-header .header-sticky.active .navbar {
 
 .best-selling-content-img img {
 	width: 100%;
-	aspect-ratio: 1 / 0.42;
+	aspect-ratio: 1 / 0.5;
 	object-fit: cover;
 }
 
